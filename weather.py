@@ -9,7 +9,7 @@ app = Flask(__name__)
 def temperature():
     """Api call to get lat + lon after user input"""
     location = request.form['country']
-    appid = 'c519510f7ef1309925118709444446bf'
+    appid = Your Api
     api = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid={appid}"
     try:
         json_object = requests.get(api).json()
